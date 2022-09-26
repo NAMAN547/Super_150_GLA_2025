@@ -1,0 +1,44 @@
+/* *{
+    color: red;
+
+    font-size: 20px;
+} */
+
+body{
+    background-color:red;
+}
+
+.container{
+    color:brown
+}
+
+#first-heading{
+    font-size:2rem;
+    color: blue;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+
+
+#special{
+    color:green;
+}
+
+input[type="text"]{
+    background-color:yellow;
+}
+
+
+section{
+    min-height: 900px;
+    width: 600px;
+    border: 2px solid black;
+    background-color: azure;
+    margin:auto;
+}
+

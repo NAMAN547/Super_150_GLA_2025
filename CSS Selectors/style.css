@@ -1,0 +1,109 @@
+div{
+    height: 100px;
+    width: 150px;
+    border: 2px solid black;
+    gap: 20px;
+   
+}
+
+/* Descendent Combinator */
+
+section:nth-of-type(1) div,ol{
+    background-color: aquamarine;
+}
+
+ol > li{
+    color: rgb(206, 15, 15);
+}
+
+ul > li {
+    color: black;
+}
+
+.container{
+width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjacent sibling combinator */
+
+ .container .box + .box {
+    background-color: red;
+}
+
+
+/* General sibling combinator */
+
+.container:nth-of-type(2) .box ~ .box {
+    background-color: red;
+}
+
+section:nth-of-type(2){
+
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+.list li:first-child{
+    color: blue;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.list li:last-child{
+    color: green;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.list li:nth-of-type(even){
+    color: rgb(243, 173, 44)
+}
+
+
+
+.list li:nth-of-type(2n + 3){
+    color: brown;
+    font-weight: 600;
+}
+
+
+
+
+.heading::before{
+    content: 'This is before text  ';
+    font-size: 3rem;
+    color: rgb(87, 129, 115);
+}
+
+
+.heading::after{
+    content: '  This is after text \2765 ';
+    font-size: 3rem;
+    color: rgb(77, 150, 195);
+}
+
+
+  
+
+section:nth-of-type(2):hover{
+    background-color: aquamarine;
+    border-radius: 50%;
+    
+}
+
+section:nth-of-type(2) p{
+    text-align: center;
+   
+}
+
+a:visited{
+    color:orangered;  
+}
+
