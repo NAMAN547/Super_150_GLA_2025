@@ -1,0 +1,24 @@
+section{
+    width: 70vw;
+    min-height: 80vh;
+    border: 3px solid black;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+@media all and (450px < width < 768px){
+
+    h1{
+        color: red;
+        font-size: 3rem;
+    }
+
+    section{
+        background-color: aquamarine;
+    }
+}
